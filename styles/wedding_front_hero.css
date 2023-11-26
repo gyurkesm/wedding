@@ -1,0 +1,16 @@
+.hero {
+  background-color: rgba(225, 204, 199, 0.1);
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90svh;
+}
+
+.img-engagement {
+  max-height: 60svh;
+  max-width: 650px;
+  width: 100%;
+  object-fit: cover;
+}
