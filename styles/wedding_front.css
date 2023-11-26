@@ -27,7 +27,7 @@ p {
   text-align: center;
   margin: 0px;
   margin-bottom: 4px;
-  font-size: clamp(1.2vw, 1rem, 2vw);
+  font-size: clamp(1.3vw, 1.4rem, 2.3vw);
 }
 
 span {
