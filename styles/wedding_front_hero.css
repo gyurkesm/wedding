@@ -8,9 +8,15 @@
   min-height: 90svh;
 }
 
+.hero-text {
+  min-width: 500px;
+  max-width: 95vw;
+}
+
 .img-engagement {
   max-height: 60svh;
   max-width: 650px;
   width: 100%;
   object-fit: cover;
+  min-height: 500px;
 }

@@ -27,36 +27,39 @@ p {
   text-align: center;
   margin: 0px;
   margin-bottom: 4px;
-  font-size: clamp(1rem, 1.2vw, 1.6rem);
+  font-size: clamp(1.2vw, 1rem, 2vw);
 }
 
 span {
   font-family: Rouge Script;
   font-weight: 700;
-  font-size: clamp(1.1rem, 1.25vw, 1.7rem);
+  font-size: clamp(1.3vw, 1rem, 2vw);
 }
 
-.quote-1 {
+.quote {
   background-color: rgba(184, 135, 11, 0.95);
 }
 
-.quote-1-text {
-  font-family: Rouge Script;
-  font-size: 7vmin;
-  font-weight: 700;
-  color: whitesmoke;
-  text-align: center;
-  padding: 4vmin;
-  padding-bottom: 1vmin;
-}
-
-.quote-1-text-hun {
+.quote-text-orig {
   font-family: Rouge Script;
   font-size: 4vmin;
-  font-weight: 600;
+  font-weight: 700;
   color: whitesmoke;
   text-align: right;
+  padding: 4vmin;
+  padding-bottom: 1vmin;
+  padding-top: 1vmin;
+}
+
+.quote-text-hun {
+  font-family: Rouge Script;
+  font-size: 5vmin;
+  font-weight: 600;
+  color: whitesmoke;
+  text-align: center;
   padding: 1vmin;
+  padding-bottom: 2px;
+  padding-top: 2px;
 }
 
 .snitt {
@@ -107,6 +110,7 @@ span {
 
 label, textarea, input{
   font-family: Arial;
+  font-size: clamp(0.9vw, 1rem, 1.5vw);
 }
 
 textarea {

@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -43,6 +44,14 @@
   text-align: center;
 }
 
+.rem-date-header {
+  font-size: clamp(0.8rem, 3.5vw, 5vh);
+}
+
+.header-middle {
+  flex: 1;
+}
+
 .header-inv {
   font-size: 5vw;
 }
@@ -51,14 +60,15 @@
   width: 21vw;
 }
 
-.header-date, .rem-date-header{
-  width: 100 px;
+.header-date-div {
+  width: 160px;
   margin-right: 10px;
+}
+.header-date, .rem-date-header{
   margin-bottom: 0;
 }
 
 .header-inv {
-  flex: 1;
   font-weight: 600;
 }
 
