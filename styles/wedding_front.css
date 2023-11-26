@@ -27,17 +27,19 @@ p {
   text-align: center;
   margin: 0px;
   margin-bottom: 4px;
-  font-size: clamp(1.3vw, 1.4rem, 2.3vw);
+  font-size: clamp(1.2vw, 1rem, 2vw);
 }
 
 span {
   font-family: Rouge Script;
   font-weight: 700;
-  font-size: clamp(1.3vw, 1rem, 2vw);
+  font-size: clamp(1.3vw, 1.4rem, 2.3vw);
 }
 
 .quote {
   background-color: rgba(184, 135, 11, 0.95);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .quote-text-orig {

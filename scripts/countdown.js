@@ -1,14 +1,24 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 17, 2024 16:00:00").getTime();
+var weddingDate = new Date("Aug 17, 2024 16:00:00").getTime()
+countdown(weddingDate);
+var daysSinceMet = countfrom(new Date("Aug 24, 2019").getTime());
+document.getElementById("days-since-met").innerHTML = daysSinceMet + " nappal (" + (daysSinceMet/365).toFixed(1) + "év)";
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const invname = urlParams.get('invname');
+document.getElementById("inv-name").innerHTML = getName();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+var x = setInterval(countdown(weddingDate), 1000*60);
+
+function countdown (in_time) {
 
   // Get today's date and time
   var now = new Date().getTime();
 
   // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+  var distance = in_time - now;
   var month = 0;
   var day_r = 0;
   // Time calculations for days, hours, minutes and seconds
@@ -76,4 +86,22 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
-}, 1000);
+}
+
+function countfrom(in_time) {
+  var now = new Date().getTime(); 
+  var distance = in_time - now;
+  var days = Math.abs(Math.floor(distance / (1000 * 60 * 60 * 24)));
+  return days;
+}
+
+function getName() {
+  if (invname == 'GyurkesZoltan') {
+    return "Papi!";
+  } else if (invname == 'LorinczFerenc') {
+    return "Feri!";
+  } else {
+    return "Barátunk/Rokonunk!"
+  }
+
+}
