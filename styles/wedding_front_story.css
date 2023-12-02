@@ -18,7 +18,7 @@
   flex-direction: column;
   align-items: center;
   width: 500px;
-  min-width: 150px;
+  min-width: 200px;
   max-width: 28vw;
   padding-left: 20px;
   padding-right: 20px;
@@ -26,7 +26,10 @@
 
 .story-paragraph {
   text-align: center;
+  font-weight: 600;
 }
+
+
 
 .story-images {
   display: flex;
@@ -59,13 +62,18 @@
     width: 70vw;
     max-width: 75vw;
     margin-left: 15vw;
+    height: 70vh;
   }
 
   .our-story-text {
-    width: 95vw;
+    width: 97vw;
     height: auto;
-    max-width: 95vw;
+    max-width: 97vw;
     padding: 0px;
+  }
+
+  .our-story-text>p {
+    font-size: clamp(1rem, 1rem, 1.7vw);
   }
 
 }

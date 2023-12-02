@@ -49,6 +49,35 @@
         <p>
           Szeretettel meghívunk az esküvőnkre, hogy együtt ünnepeljünk <span> 2024.08.17</span>-én.
         </p>
+        <hr />
+        <div id="wedding-gift">
+          <div class="wedding-gift-1">
+            Aki a nászunkra szép ajándékot adna, 
+          </div>
+          <div class="wedding-gift-2">
+            a reánk szánt összeget tegye borítékba:
+          </div>
+          <div class="wedding-gift-1">
+            A legtöbbet ugyanis ez jelenti nekünk, 
+          </div>
+          <div class="wedding-gift-2">
+            mert bizony messzire húz minket a szívünk!
+          </div>
+          <div class="wedding-gift-1">
+            Távoli vidékre, romantikus tájra, 
+          </div>
+          <div class="wedding-gift-2">
+            feledhetetlen kalandra, álmaink nászútjára!
+          </div>
+        </div>
+        <hr />
+        <div class="hero-text">
+          <p><span>2024.08.17. 16:00-tól</span> várunk szeretettel esküvönk helyszínén:<p>
+          <p> <span> 1221, Budapest, Anna utca 9. Butique Hotel & Event Center </span></p>
+          <p>Ingyenes, zárt parkololóhely biztosított a hotel területén</p>
+          <p>Igény esetén szállás foglalására is van lehetőség</p>
+        </div>
+
       </div>
     </div>
 
@@ -78,17 +107,55 @@
       <img class="first-anniversary" src="images/first_anni.jpg" alt="">
       <div class="our-story-text">
         <h1>
-          Történetünk:
+          Rövid történetünk:
         </h1>
+        <p> <span id="days-since-met"></span> ismertük meg egymást, íme egy rövid összefoglaló a közös utunk eddigi állomásairól: </p>
 
         <p class="story-paragraph">
-          <span id="days-since-met"> </span> ezelőtt megváltozott az életünk. <span> 2019.08.24.</span> egy Lithium Light bulin találkoztunk egymással, és rögtön tudtuk, hogy ez egy különleges ismerettség kezdete.
+          <span> 2019.08.24</span> &#9825; The Girl from the Rock Show
+        </p>
+        <p>
+          A véletlennek és a közös zenei ízlésnek köszönhetően a Lithium Light-on megláttuk egymást, és rögtön tudtuk, hogy ez egy életreszóló kaland kezdete.
+        </p>
+        
+        <p class="story-paragraph">
+          <span> 2019.11.03 </span> &#9825; Are You Gonna Be My Girl?
+        </p>
+        <p>
+          Nutellás gofri és séta a dunaparton. Kell ennél jobb első randi?
+        </p>
+
+        <p class="story-paragraph">
+          <span> 2020.03.10 </span> &#9825; F*ck Covid, or Not?
+        </p>
+
+        <p>
+          Repjegy, szállás &#x2713; Irány Bergamo! Ja, hogy karantén alatt a város? Akkor költözzünk össze!
+        </p>
+
+        <p class="story-paragraph">
+          <span> 2022.01.05 </span> &#9825; Pocak has entered the chat
+        </p>
+
+        <p>
+          Befogadtuk a legédesebb szobatigrist (vagy inkább hiúzt?)
+        </p>
+
+        <p class="story-paragraph">
+          <span> 2022.11.06 </span> &#9825; Will you marry me?
+        </p>
+        <p>
+          Évfordulós program egy nagy csavarral a végén, a válasz IGEN!!
+        </p>
+
+        <p class="story-paragraph">
+          <span> 2024. </span> &#9825; Életünk legizgalmasabb évének nézünk elébe
+        </p>
+        <p>
+          Dr. Gyürkés - Mikrobiológus Lotti, és nem utolsó sorban házasok!
         </p>
         <p class="story-paragraph">
-          Kapcsolatunk <span> 2019.11.03.</span> kezdődött, egy hosszú sétával a duna parton, és azóta tudjuk, hogy egymáshoz tartozunk.
-        </p>
-        <p class="story-paragraph">
-          Ebben az 5 évben sok dolog történt velünk.
+          ... and they lived happily ever after &#9825;
         </p>
       </div>
       <img class="third-anniversary" src="images/third_anni.JPG" alt="">
@@ -105,17 +172,14 @@
 
     <div class="story-images">
       <img src="images/story1.jpg" alt="">
-      <img src="images/story2.jpg" alt="">
-      <img src="images/story3.jpg" alt="">
       <img src="images/story4.jpg" alt="">
+      <img src="images/story3.jpg" alt="">
+      <img src="images/story2.jpg" alt="">
       <img src="images/story5.jpg" alt="">
     </div>
 
-    <img class="snitt" src="images/snitt_2.JPG">
+
     <div class="schedule">
-      <p>
-        Az esküvő a <strong>Butique Hotel 22</strong>-ben lesz megtartva.
-      </p>
       <div class="timer-container">
         <div class="timer-block">
           <p id="time1" class="timer-text"></p>
@@ -141,9 +205,9 @@
         </script>
         
       </div>
-      <h2 class="schedule-header">
+      <h1 class="schedule-header">
         Menetrend:
-      </h2>
+      </h1>
       <div class="schedule-container">
         <div class="schedule-block">
           <p class="schedule-text">
@@ -201,35 +265,35 @@
     <form class="response-form">
       <div class="form">
         <h2>
-          Kérjük minél előbb jelezz vissza, az űrlap kitöltésével
-        </h1>
+          Kérjük jelezz vissza az ürlap kitöltésével!
+        </h2>
         <div class="form-row">
           <label for="name"> Teljes név: </label>
-          <input type="text" id="name" name="name" size="30" placeholder="Teljes név" required="true" autocomplete="name"/>
+          <input type="text" name="name" size="30" placeholder="Teljes név" required="true" autocomplete="name"/>
         </div>
   
         <div class="form-row">
           <label for="mail"> Email cím: </label>
-          <input type="email" id="mail" name="email" size="30" placeholder="email@email.com" required="true" autocomplete="email"/>
+          <input type="email" name="email" size="30" placeholder="email@email.com" required="true" autocomplete="email"/>
         </div>
   
         <div class="form-row">
-          <label for="vname"> Plusz egy fő: </label>
-          <input type="text" id="vname" name="vname" size="30" placeholder="Teljes név" autocomplete="name"/>
+          <label for="vname"> Kísérő: </label>
+          <input type="text" name="vname" size="30" placeholder="Teljes név" autocomplete="name"/>
         </div>
         
         <div class="form-row">
           <label for="vmail"> Email cím: </label>
-          <input type="email" id="vmail" name="vemail" size="30" placeholder="email@email.com" autocomplete="email"/>
+          <input type="email" name="vemail" size="30" placeholder="email@email.com" autocomplete="email"/>
         </div>
         
         <p> Üzenet:</p>
         <div>
-          <textarea type="text" id="response" name="response" rows="7" cols="55">Köszönjük a meghívást, ott leszünk!</textarea>
+          <textarea type="text" name="response" rows="7" cols="55">Köszönjük a meghívást, ott leszünk!</textarea>
         </div>
 
         <div>
-          <textarea type="text" id="music" name="music" rows="7" cols="55">Írjatok pár számot amit szeretnétek hallani az este</textarea>
+          <textarea type="text" name="music" rows="7" cols="55">Írj egy számot, amire biztosan felugrassz a székből, hogy megtáncoltass minket! Különben egész este vonatozni fogunk! Just sayin'</textarea>
         </div>
       
 
@@ -274,12 +338,12 @@
 
     <div class="footer">
       <p>
-        Az eljegyzés napján készült képekért hálás köszönet, Tóth Dánielnek!
+        Az eljegyzés napján készült képekért hálás köszönet unokatestvéremnek, Tóth Dáninak!
       </p>
       <a href="https://bowtieweddings.hu/author/tdani/">Tóth Dániel - Bowtie Weddings</a>
 
       <p>
-        A weboldalt Martin készítette, ha valami nem működik megfelelően, akkor jelezzétek, és megpróbálja kijavítani.
+        A weboldalt Lotti és Martin készítette, ha valami nem működik megfelelően, az Martin hibája (de ha szóltok, kijavítja)
       </p>
     </div>
   </body>

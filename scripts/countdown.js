@@ -2,7 +2,7 @@
 var weddingDate = new Date("Aug 17, 2024 16:00:00").getTime()
 countdown(weddingDate);
 var daysSinceMet = countfrom(new Date("Aug 24, 2019").getTime());
-document.getElementById("days-since-met").innerHTML = daysSinceMet + " nappal (" + (daysSinceMet/365).toFixed(1) + "év)";
+document.getElementById("days-since-met").innerHTML = daysSinceMet + " napja";
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);

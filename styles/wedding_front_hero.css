@@ -9,7 +9,7 @@
 }
 
 .hero-text {
-  min-width: 500px;
+  width: 700px;
   max-width: 95vw;
 }
 
@@ -24,3 +24,14 @@
 .inv-name-cl {
   font-size: 40px;
 }
+
+#wedding-gift {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wedding-gift-2 {
+  margin-left: 5px;
+}
+
