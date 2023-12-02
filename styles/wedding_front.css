@@ -187,8 +187,9 @@ hr {
   justify-content: center;
 }
 
-.wedding-gift-2 {
+.wedding-gift-1, .wedding-gift-2 {
   margin-left: 5px;
+  text-wrap: nowrap;
 }
 
 .our-story {
