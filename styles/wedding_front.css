@@ -154,3 +154,207 @@ hr {
   width: 60 vw; 
 }
 
+.hero {
+  background-color: rgba(225, 204, 199, 0.1);
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90svh;
+}
+
+.hero-text {
+  width: 700px;
+  max-width: 95vw;
+}
+
+.img-engagement {
+  max-height: 60svh;
+  max-width: 650px;
+  width: 100%;
+  object-fit: cover;
+  min-height: 500px;
+}
+
+.inv-name-cl {
+  font-size: 40px;
+}
+
+#wedding-gift {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wedding-gift-2 {
+  margin-left: 5px;
+}
+
+.our-story {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-anniversary, .third-anniversary{
+  flex: 1;
+  min-width: 150px;
+  max-width: 28vw;
+  height: 80vh;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 0;
+}
+
+.our-story-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  min-width: 200px;
+  max-width: 28vw;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.story-paragraph {
+  text-align: center;
+  font-weight: 600;
+}
+
+
+
+.story-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 420px;
+  max-height: 26.7vw;
+}
+
+.story-images>img {
+  max-width: 260px;
+  transition: width 0.3s, max-width 0.3s;
+  width: 17.5vw;
+  border-radius: 6px;
+}
+
+.story-images>img:hover {
+  max-width: 290px;
+  width: 20vw;
+  box-shadow: 5px 5px 4px rgb(146, 142, 104)
+}
+
+@media (orientation: portrait) {
+  .our-story{
+    display: block;
+  }
+
+  .first-anniversary, .third-anniversary{
+    width: 70vw;
+    max-width: 75vw;
+    margin-left: 15vw;
+    height: 70vh;
+  }
+
+  .our-story-text {
+    width: 97vw;
+    height: auto;
+    max-width: 97vw;
+    padding: 0px;
+  }
+
+  .our-story-text>p {
+    font-size: clamp(1rem, 1rem, 1.3vw);
+  }
+
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.schedule-header {
+  font-size: clamp(2.4rem, 3vw, 6rem);
+}
+
+.timer-container {
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  padding-left: 9vw;
+  padding-right: 9vw;
+  background-color: rgba(225, 204, 199, 1);
+}
+
+.timer-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vw;
+  max-height: 150px;
+}
+
+.timer-text {
+  font-family: Rouge Script;
+  font-size: clamp(2rem, 6vw, 50px);
+}
+
+.timer-dim-text {
+  font-family: Rouge Script;
+  font-size: clamp(1.8rem, 4vw, 30px);
+}
+
+.schedule-container {
+  display: grid;
+  grid-template-columns: 40vmin 40vmin;
+}
+
+.schedule-block:first-of-type {
+   border-top-left-radius: 10%;
+}
+
+.schedule-block:last-of-type {
+  border-bottom-right-radius: 10%;
+}
+
+iframe {
+  max-width: 500px;
+  max-height: 500px;
+  width: 40vmin;
+  height: 40vmin;
+}
+
+.loc {
+  max-width: 500px;
+  max-height: 500px;
+  width: 40vmin;
+  height: 40vmin;
+  object-fit: cover;
+}
+
+.schedule-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 500px;
+  max-height: 500px;
+  width: 40vmin;
+  height: 40vmin;
+  background-color: rgba(225, 204, 199, 1);
+}
+
+.schedule-text {
+  font-family: Rouge Script;
+  font-size: 7vmin;
+  text-align: center;
+}
+
+.schedule-dot {
+  font-size: 9vmin;
+  color: rgb(105, 32, 32);
+}
