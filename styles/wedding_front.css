@@ -29,7 +29,7 @@ span {
   font-weight: 700;
 }
 
-.timer-text, .timer-dim-text, .schedule-text, .span, h1, h2, .quote-text-orig, .quote-text-hun{
+.timer-text, .timer-dim-text, .schedule-text, span, h1, h2, .quote-text-orig, .quote-text-hun{
   font-family: Rouge Script, Arial;
 }
 
