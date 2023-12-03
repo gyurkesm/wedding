@@ -143,7 +143,7 @@ hr {
 }
 
 .img-engagement {
-  max-height: 60svh;
+  max-height: 60vh;
   max-width: 650px;
   width: 100%;
   object-fit: cover;
