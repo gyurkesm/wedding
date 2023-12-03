@@ -290,15 +290,7 @@
     
       <input type="submit" class="submit-form">
       
-      <script>
-        const form = document.querySelector('form')
-        form.addEventListener('submit', (e) => {
-          e.preventDefault()
-          const formData = new FormData(e.target)
-          const json = JSON.stringify(Object.fromEntries(formData));
-          console.log(json)
-        });
-        
+      <script src="/scripts/post-formData.js">
       </script>
     </form>
 
