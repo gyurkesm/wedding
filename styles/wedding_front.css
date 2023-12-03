@@ -190,6 +190,7 @@ hr {
 .wedding-gift-1, .wedding-gift-2 {
   margin-left: 5px;
   text-wrap: nowrap;
+  font-size: clamp(1rem, 1rem, 2vw);
 }
 
 .our-story {
@@ -267,7 +268,16 @@ hr {
   }
 
   .our-story-text>p {
-    font-size: clamp(1rem, 1rem, 1.3vw);
+    font-size: clamp(0.9rem, 0.9rem, 1.3vw);
+    width: 95vw;
+    max-width: 95vw;
+  }
+
+  .story-paragraph {
+    width: 95vw;
+    max-width: 95vw;
+    text-align: center;
+    font-weight: 600;
   }
 
 }
