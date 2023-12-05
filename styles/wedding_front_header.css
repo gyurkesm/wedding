@@ -1,4 +1,4 @@
-.header {
+header {
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -12,93 +12,102 @@
   z-index: 100;
 }
 
-.header-logo {
+body {
+  padding-top: clamp(110px, 9vh, 9vh);
+}
+
+#header-logo {
   margin-left: 5vw;
   position: relative;
 }
 
-.img-logo {
+#header-logo > img {
   margin-top: 2px;
   height: 100px;
   transition: transform 10s;
-
 }
 
-.img-logo:hover {
-  transform:rotate(360deg);
-}
-
-.logo-initials {
+#header-logo > p {
   position: absolute;
   top: 40%;
   left: 30%;
-  font-family: Rouge Script;
-  font-size: 100%;
-  font-weight: 600;
   z-index: 101;
-}
-
-.header-name, .header-inv, .header-date, .rem-date-header {
-  font-family: Rouge Script;
-  font-size: clamp(1rem, 4.2vw, 6vh);
-  text-align: center;
-}
-
-.rem-date-header {
-  font-size: clamp(0.8rem, 3.5vw, 5vh);
 }
 
 .header-middle {
   flex: 1;
 }
 
-.header-inv {
-  font-size: 5vw;
-}
-
-.header-name {
+#header-name {
   width: 21vw;
 }
 
-.header-date-div {
+#header-date-div {
   width: 160px;
   margin-right: 10px;
 }
-.header-date, .rem-date-header{
+
+#header-date-div > p {
   margin-bottom: 0;
 }
 
-.header-inv {
+header p {
+  font-family: Rouge Script, Arial;
+}
+
+#header-name, #header-inv, #header-date, #remain-date {
+  text-align: center;
+}
+
+#header-logo > p {
+  font-size: 100%;
   font-weight: 600;
 }
 
+#header-name, #header-date {
+  font-size: clamp(1rem, 4.2vw, 6vh);
+}
+
+#remain-date {
+  font-size: clamp(0.8rem, 3.5vw, 5vh);
+}
+
+#header-inv {
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+#header-logo > img:hover {
+  transform: rotate(360deg);
+}
+
 @media (orientation: landscape) {
-  .header {
+  header {
     height: 7vh;
     min-height: 70px;
   }
 
-  .img-logo {
+  body{
+    padding-top: clamp(70px, 7vh, 7vh);
+  }
+
+  #header-logo > img {
     margin-top: 2px;
     height: 65px;
   }
 
-  .logo-initials {
+  #header-logo > p {
     top: 38%;
     left: 27%;
     font-size: 80%;
     font-weight: 600;
   }
 
-  body{
-    padding-top: 7vh;
+  #header-date, #remain-date{
+    font-size: 30px;
   }
 
-  .header-date, .rem-date-header{
-    font-size: clamp(1rem, 3.6vw, 4.5vh);;
-  }
-
-  .header-inv {
+  #header-inv {
     font-size: 4vw;
   }
 }

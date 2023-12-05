@@ -4,7 +4,6 @@ body{
   background-color: rgba(225, 204, 199, 0.2);
   margin: 0;
   padding: 0;
-  padding-top: clamp(110px, 9vh, 150px);
 }
 
 h1, h2 {
@@ -50,6 +49,7 @@ p, label, input, textarea, div{
 span {
   font-size: clamp(1.4rem, 1.4rem, 2.3vw);
 }
+
 .quote-text-orig {
   font-size: 4vmin;
 }
@@ -58,11 +58,11 @@ span {
   font-size: 5vmin;
 }
 
-.footer>p {
+.footer > p {
   font-size: 0.9rem;
 }
 
-.inv-name-cl {
+#inv-name-cl {
   font-size: 40px;
 }
 
@@ -199,7 +199,7 @@ hr {
 }
 
 @media (orientation: portrait) {
-  .our-story-text>p {
+  .our-story-text > p {
     font-size: clamp(0.9rem, 0.9rem, 1.3vw);
   }
 
@@ -375,7 +375,7 @@ input {
   align-items: center;
 }
 
-.footer>a {
+.footer > a {
   all: unset;
   text-align: center;
   font-size: 1rem;
