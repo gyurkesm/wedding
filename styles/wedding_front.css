@@ -28,13 +28,13 @@ span {
   font-weight: 700;
 }
 
-span, h1, h2, .timer-text, .timer-dim-text, .schedule-text, .quote-text-orig, .quote-text-hun{
+span, h1, h2, .timer-text, .timer-dim-text, .schedule-text, .quote-text-orig, .quote-text-hun, #our-story-text > p:first-of-type {
   font-family: Rouge Script, Arial;
 }
 
 /* font-sizes */
 
-h1 {
+h1, #our-story-text > p:first-of-type {
   font-size: clamp(2rem, 2.2vw, 4rem);
 }
 
@@ -42,7 +42,7 @@ h2 {
   font-size: clamp(1.5rem, 1.8vw, 3rem);
 }
 
-p, label, input, textarea, div{
+p, label, input, textarea {
   font-size: clamp(1rem, 1rem, 2vw);
 }
 
@@ -155,16 +155,10 @@ hr {
   max-width: 95vw;
 }
 
-#wedding-gift {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+#gift-div > p {
+  text-wrap: balance;
 }
 
- #wedding-gift > p{
-  margin-left: 5px;
-  text-wrap: nowrap;
-}
 
 /* story section */
 
@@ -193,6 +187,7 @@ hr {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 
 .story-paragraph {
   font-weight: 600;
