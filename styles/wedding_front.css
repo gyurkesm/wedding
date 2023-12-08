@@ -34,7 +34,7 @@ span, h1, h2, .timer-text, .timer-dim-text, .schedule-text, .quote-text-orig, .q
 
 /* font-sizes */
 
-h1, #our-story-text > p:first-of-type {
+h1, #inv-name, #our-story-text > p:first-of-type {
   font-size: clamp(2rem, 2.2vw, 4rem);
 }
 
@@ -383,4 +383,43 @@ input {
 .footer>p {
   padding-top: 10px;
   color: rgb(37, 37, 37);
+}
+
+#LottiMartin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(182, 130, 119);
+}
+
+#LottiMartin > div {
+  padding: 15px;
+}
+
+.LottiMartin-img {
+  width: 35vw;
+  height: 35vw;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+#LottiMartin h1, #LottiMartin h2 {
+  text-align: center;
+  color: white;
+}
+
+#LottiMartin a {
+  display: block;
+}
+
+.soclogo {
+  width: 40px;
+  height: 40px;
+  display: block;
+  padding: 5px;
+}
+
+.soc-div {
+  display: flex;
+  justify-content: center;
 }
