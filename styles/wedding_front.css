@@ -319,11 +319,11 @@ iframe, .loc, .schedule-block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10vh;
+  margin-top: 7vh;
 }
 
 #response-form > div{
-  width: 400px;
+  width: 500px;
   padding-bottom: 10px;
   display: flex;
   flex-direction: row;
@@ -339,11 +339,11 @@ input {
 }
 
 .submit-form {
-  background-color: blanchedalmond;
+  background-color: rgb(255, 223, 174);
   border-color: rgb(247, 168, 168);
   color: rgb(154, 55, 55);
   border-style: solid;
-  border-radius: 8px;
+  border-radius: 10px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 20px;
@@ -390,6 +390,7 @@ input {
   flex-direction: row;
   justify-content: center;
   background-color: rgb(182, 130, 119);
+  margin-bottom: 10px;
 }
 
 #LottiMartin > div {
