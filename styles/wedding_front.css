@@ -4,6 +4,7 @@ body{
   background-color: rgba(225, 204, 199, 0.2);
   margin: 0;
   padding: 0;
+  font-family: 'Fredoka', sans-serif;
 }
 
 h1, h2 {
@@ -18,7 +19,7 @@ p {
 }
 
 p, label, input, textarea{
-  font-family: Arial;
+  font-family: 'Fredoka', sans-serif;
   color:rgb(65, 65, 65);
   margin: 0px;
   margin-bottom: 4px;
@@ -29,7 +30,7 @@ span {
 }
 
 span, h1, h2, .timer-text, .timer-dim-text, .schedule-text, .quote-text-orig, .quote-text-hun, #our-story-text > p:first-of-type {
-  font-family: Rouge Script, Arial;
+  font-family: 'Rouge Script', cursive;
 }
 
 /* font-sizes */
@@ -171,7 +172,6 @@ hr {
   flex: 1;
   min-width: 150px;
   max-width: 28vw;
-  height: 80vh;
   object-fit: cover;
   border-radius: 20px;
   margin: 0;
@@ -188,6 +188,12 @@ hr {
   padding-right: 20px;
 }
 
+@media (width < 700px) {
+  #our-story-text {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
 
 .story-paragraph {
   font-weight: 600;
