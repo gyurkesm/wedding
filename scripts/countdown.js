@@ -1,7 +1,7 @@
 // Set the date we're counting down to
-var weddingDate = new Date("Aug 17, 2024 16:00:00").getTime()
+let weddingDate = new Date("Aug 17, 2024 16:00:00")
 countdown(weddingDate);
-var daysSinceMet = countfrom(new Date("Aug 24, 2019").getTime());
+let daysSinceMet = countfrom(new Date("Aug 24, 2019").getTime());
 document.getElementById("days-since-met").innerHTML = daysSinceMet + " napja";
 
 const queryString = window.location.search;
@@ -10,55 +10,50 @@ const invname = urlParams.get('invname');
 document.getElementById("inv-name").innerHTML = getName();
 
 // Update the count down every 1 second
-var x = setInterval(countdown(weddingDate), 1000*60);
+let x = setInterval(countdown(weddingDate), 1000*60);
 
 function countdown (in_time) {
 
   // Get today's date and time
-  var now = new Date().getTime();
+  let now = new Date().getTime();
+  const timeChange = new Date('2024.03.31 02:00');
 
   // Find the distance between now and the count down date
-  var distance = in_time - now;
-  var month = 0;
-  var day_r = 0;
+  let distance = in_time.getTime() - now;
+  if (now < timeChange) {
+    distance = distance + 1000 * 60 * 60;
+  };
+  let day_r = 0;
   // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
   
-  if (days >= 274){
-    month = 9;
-    days = days - 274;
-  } else if (days >= 244){
-    month = 8;
-    days = days - 244;
-  } else if (days >= 213) {
-    month = 7;
-    days = days - 213;
-  } else if (days >= 182) {
-    month = 6;
-    days = days - 182;
-  } else if (days >= 153) {
-    month = 5;
-    days = days - 153;
-  } else if (days >= 122) {
-    month = 4;
-    days = days - 122;
-  } else if (days >= 92) {
-    month = 3;
-    days = days - 92;
-  } else if (days >= 61) {
-    month = 2;
-    days = days - 61;
-  } else if (days >= 31) {
-    month = 1;
-    days = days - 31;
+  const monthLens = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  const eventMonth = in_time.getMonth();
+  let i_days = [0];
+  for (let i = 1; i < 13; i++) {
+    if (eventMonth - i < 0) {
+      j = monthLens.length + (eventMonth - i);
+    } else {
+      j = eventMonth - i;
+    }
+    i_days.push(i_days[i-1] + monthLens[j]);
   }
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  let month = 0;
+  for (let i = 0; i < i_days.length; i++) {
+    if (days < i_days[i]) {
+      month = i - 1;
+      days = days - i_days[i-1];
+      break;
+    }
+  }
+
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  var oneweek = 1000 * 60 * 60 * 24 * 7;
+  let oneweek = 1000 * 60 * 60 * 24 * 7;
   if (distance > oneweek) {
     document.getElementById("time1").innerHTML = month;
     document.getElementById("timedim1").innerHTML = "Hónap";
@@ -89,9 +84,9 @@ function countdown (in_time) {
 }
 
 function countfrom(in_time) {
-  var now = new Date().getTime(); 
-  var distance = in_time - now;
-  var days = Math.abs(Math.floor(distance / (1000 * 60 * 60 * 24)));
+  let now = new Date().getTime(); 
+  let distance = in_time - now;
+  let days = Math.abs(Math.floor(distance / (1000 * 60 * 60 * 24)));
   return days;
 }
 
