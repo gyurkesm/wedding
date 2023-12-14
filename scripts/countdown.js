@@ -15,7 +15,6 @@ if (!urlParams.get('invname')) {
 }
 
 
-console.log(invname);
 document.getElementById("inv-name").innerHTML = getName();
 
 // Update the count down every 1 second
