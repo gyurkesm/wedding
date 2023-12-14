@@ -6,7 +6,16 @@ document.getElementById("days-since-met").innerHTML = daysSinceMet + " napja";
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const invname = urlParams.get('invname');
+let invname = '';
+if (!urlParams.get('invname')) {
+  invname = localStorage.getItem("invname");
+} else {
+  invname = urlParams.get('invname');
+  localStorage.setItem("invname", invname);
+}
+
+
+console.log(invname);
 document.getElementById("inv-name").innerHTML = getName();
 
 // Update the count down every 1 second
@@ -124,7 +133,7 @@ function getName() {
     return 'Misi!';
   case 'Bence':
     return 'Bence!';
-  case 'Adi':
+  case 'AdiVirag':
     return 'Virág és Ádi!'
   case 'OliKata':
     return 'Kata és Olivér!';
