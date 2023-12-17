@@ -312,7 +312,7 @@
       
       <div>
         <label for="vmail"> Email cím: </label>
-        <input type="email" id="vmail" name="vemail" size="30" placeholder="email@email.com" autocomplete="email"/>
+        <input type="email" id="vemail" name="vemail" size="30" placeholder="email@email.com" autocomplete="email"/>
       </div>
       
       <p> Üzenet:</p>
@@ -360,7 +360,7 @@
               Kísérő: ${data.message.vname}
             </p>`
           }
-          if (data.message.vmail) {
+          if (data.message.vemail) {
             responseText += `<p>
               Kísérő email: ${data.message.vemail}
             </p>`
@@ -369,12 +369,12 @@
           } catch (error) {
             console.error('Error:', error);
           }
-        document.getElementById('name').value('');
-        document.getElementById('email').value('');
-        document.getElementById('vname').value('');
-        document.getElementById('vmail').value('');
-        document.getElementById('message').value('Köszönjük a meghívást, ott leszünk!');
-        document.getElementById('music').value("Írj egy számot, amire biztosan felugrassz a székből, hogy megtáncoltass minket! Különben egész este vonatozni fogunk! Just sayin'");
+        document.getElementById('name').innerText('');
+        document.getElementById('email').innerText('');
+        document.getElementById('vname').innerText('');
+        document.getElementById('vemail').innerText('');
+        document.getElementById('message').innerText('Köszönjük a meghívást, ott leszünk!');
+        document.getElementById('music').innerText("Írj egy számot, amire biztosan felugrassz a székből, hogy megtáncoltass minket! Különben egész este vonatozni fogunk! Just sayin'");
         });
         
 
