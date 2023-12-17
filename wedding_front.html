@@ -346,8 +346,7 @@
             body: formDataJSON
           });
           let data = await response.json();
-          document.getElementById('response').innerHTML = 
-          `<p>
+          let responseText = `<p>
               Válasz sikeresen beküldve:
             </p>
             <p>
@@ -355,13 +354,18 @@
             </p>
             <p>
               Email: ${data.message.email}
-            </p>
-            <p>
+            </p>`
+          if (data.message.vname) {
+            responseText += `<p>
               Kísérő: ${data.message.vname}
-            </p>
-            <p>
-              Kísérő email: ${data.message.vmail}
-            </p>`;
+            </p>`
+          }
+          if (data.message.vmail) {
+            responseText += `<p>
+              Kísérő email: ${data.message.vemail}
+            </p>`
+          }
+          document.getElementById('response').innerHTML = responseText;
           } catch (error) {
             console.error('Error:', error);
           }
