@@ -290,13 +290,6 @@
       </div>
       
     </div>
-
-    <div>
-      <p>
-        Az űrlap sajnos még nem aktív, kérjük nézz vissza a közeljövöben, és ha már aktív, töltsd ki!
-      </p>
-
-    </div>
     
     <form id="response-form">
       <h1>
@@ -329,6 +322,9 @@
     
       <input type="submit" class="submit-form" value="Küldés!">
       
+      <div id="response">
+
+      </div>
       <script>
         const form = document.querySelector('form');
         form.addEventListener('submit', async (e) => {
@@ -350,11 +346,34 @@
             body: formDataJSON
           });
           let data = await response.json();
-          console.log(data.message.name);
+          document.getElementById('response').innerHTML = 
+          `<p>
+              Válasz sikeresen beküldve:
+            </p>
+            <p>
+              Név: ${data.message.name}
+            </p>
+            <p>
+              Email: ${data.message.email}
+            </p>
+            <p>
+              Kísérő: ${data.message.vname}
+            </p>
+            <p>
+              Kísérő email: ${data.message.vmail}
+            </p>`;
           } catch (error) {
             console.error('Error:', error);
           }
+        document.getElementById('name').value('');
+        document.getElementById('email').value('');
+        document.getElementById('vname').value('');
+        document.getElementById('vmail').value('');
+        document.getElementById('message').value('Köszönjük a meghívást, ott leszünk!');
+        document.getElementById('music').value("Írj egy számot, amire biztosan felugrassz a székből, hogy megtáncoltass minket! Különben egész este vonatozni fogunk! Just sayin'");
         });
+        
+
       </script>
     </form>
   
