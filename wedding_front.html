@@ -297,7 +297,7 @@
       </p>
 
     </div>
-    <!-- 
+    
     <form id="response-form">
       <h1>
         Kérjük jelezz vissza az ürlap kitöltésével!
@@ -323,24 +323,41 @@
       </div>
       
       <p> Üzenet:</p>
-      <textarea type="text" name="response" rows="7" cols="60">Köszönjük a meghívást, ott leszünk!</textarea>
+      <textarea type="text" name="message" rows="7" cols="60">Köszönjük a meghívást, ott leszünk!</textarea>
 
       <textarea type="text" name="music" rows="7" cols="60">Írj egy számot, amire biztosan felugrassz a székből, hogy megtáncoltass minket! Különben egész este vonatozni fogunk! Just sayin'</textarea>
     
       <input type="submit" class="submit-form" value="Küldés!">
       
       <script>
-        const form = document.querySelector('form')
-        form.addEventListener('submit', (e) => {
-          e.preventDefault()
-          const formData = new FormData(e.target)
-          const json = JSON.stringify(Object.fromEntries(formData));
-          console.log(json)
+        const form = document.querySelector('form');
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const formData = new FormData(e.target);
+          const formDataJSON = JSON.stringify(Object.fromEntries(formData));
+          console.log(formDataJSON);
+          const url = 'https://lottimartin.cyclic.app:5000/api/guest';
+          try {
+            const response = await fetch(url, {
+              method: 'POST',
+              cache: 'no-cache',
+              mode: 'cors',
+              headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Host': 'https://lottimartin.cyclic.app:5000'
+              },
+            body: formDataJSON
+          });
+          let data = await response.json();
+          console.log(data.message.name);
+          } catch (error) {
+            console.error('Error:', error);
+          }
         });
-        
       </script>
     </form>
-  -->
+  
     <div class="quote">
       <p class="quote-text-hun">
         'Mert az élet, nélküled, már nem lehet tökéletes'
@@ -354,7 +371,7 @@
 
     <div class="footer">
       <p>
-        Az eljegyzés napján készült képekért hálás köszönet unokatestvéremnek, Tóth Dáninak!
+        Az eljegyzés napján készült képekért hálás köszönet unokatestvéremnek, Tóth Daninak!
       </p>
       <a href="https://bowtieweddings.hu/author/tdani/">Tóth Dániel - Bowtie Weddings</a>
 
