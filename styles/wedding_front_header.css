@@ -55,7 +55,10 @@ header p {
   font-family: Rouge Script, Arial;
 }
 
-#header-name, #header-inv, #header-date, #remain-date {
+#header-name,
+#header-inv,
+#header-date,
+#remain-date {
   text-align: center;
 }
 
@@ -64,7 +67,8 @@ header p {
   font-weight: 600;
 }
 
-#header-name, #header-date {
+#header-name,
+#header-date {
   font-size: clamp(1rem, 4.2vw, 6vh);
 }
 
@@ -89,7 +93,7 @@ header p {
     min-height: 70px;
   }
 
-  body{
+  body {
     padding-top: clamp(70px, 7vh, 7vh);
   }
 
@@ -105,7 +109,8 @@ header p {
     font-weight: 600;
   }
 
-  #header-date, #remain-date{
+  #header-date,
+  #remain-date {
     font-size: 30px;
   }
 

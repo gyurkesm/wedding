@@ -1,14 +1,15 @@
 /* general */
 
-body{
+body {
   background-color: rgba(225, 204, 199, 0.2);
   margin: 0;
   padding: 0;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
 
-h1, h2 {
-  color:rgb(93, 93, 93);
+h1,
+h2 {
+  color: rgb(93, 93, 93);
   margin: 0px;
   margin-bottom: 4px;
   margin-left: 10px;
@@ -18,9 +19,12 @@ p {
   text-align: center;
 }
 
-p, label, input, textarea{
-  font-family: 'Fredoka', sans-serif;
-  color:rgb(65, 65, 65);
+p,
+label,
+input,
+textarea {
+  font-family: "Fredoka", sans-serif;
+  color: rgb(65, 65, 65);
   margin: 0px;
   margin-bottom: 4px;
 }
@@ -29,13 +33,23 @@ span {
   font-weight: 700;
 }
 
-span, h1, h2, .timer-text, .timer-dim-text, .schedule-text, .quote-text-orig, .quote-text-hun, #our-story-text > p:first-of-type {
-  font-family: 'Rouge Script', cursive;
+span,
+h1,
+h2,
+.timer-text,
+.timer-dim-text,
+.schedule-text,
+.quote-text-orig,
+.quote-text-hun,
+#our-story-text > p:first-of-type {
+  font-family: "Rouge Script", cursive;
 }
 
 /* font-sizes */
 
-h1, #inv-name, #our-story-text > p:first-of-type {
+h1,
+#inv-name,
+#our-story-text > p:first-of-type {
   font-size: clamp(2rem, 2.2vw, 4rem);
 }
 
@@ -43,7 +57,10 @@ h2 {
   font-size: clamp(1.5rem, 1.8vw, 3rem);
 }
 
-p, label, input, textarea {
+p,
+label,
+input,
+textarea {
   font-size: clamp(1rem, 1rem, 2vw);
 }
 
@@ -160,7 +177,6 @@ hr {
   text-wrap: balance;
 }
 
-
 /* story section */
 
 #our-story {
@@ -168,7 +184,7 @@ hr {
   justify-content: space-between;
 }
 
-#our-story > img{
+#our-story > img {
   flex: 1;
   min-width: 150px;
   max-width: 28vw;
@@ -204,11 +220,11 @@ hr {
     font-size: clamp(0.9rem, 0.9rem, 1.3vw);
   }
 
-  #our-story{
+  #our-story {
     display: block;
   }
 
-  #our-story > img{
+  #our-story > img {
     width: 70vw;
     max-width: 75vw;
     margin-left: 15vw;
@@ -233,7 +249,6 @@ hr {
     text-align: center;
     font-weight: 600;
   }
-
 }
 
 #story-images {
@@ -255,7 +270,7 @@ hr {
 #story-images > img:hover {
   max-width: 290px;
   width: 20vw;
-  box-shadow: 5px 5px 4px rgb(146, 142, 104)
+  box-shadow: 5px 5px 4px rgb(146, 142, 104);
 }
 
 /* schedule section */
@@ -289,14 +304,16 @@ hr {
 }
 
 .schedule-block:first-of-type {
-   border-top-left-radius: 10%;
+  border-top-left-radius: 10%;
 }
 
 .schedule-block:last-of-type {
   border-bottom-right-radius: 10%;
 }
 
-iframe, .loc, .schedule-block {
+iframe,
+.loc,
+.schedule-block {
   max-width: 500px;
   max-height: 500px;
   width: 40vmin;
@@ -328,7 +345,7 @@ iframe, .loc, .schedule-block {
   margin-top: 7vh;
 }
 
-#response-form > div{
+#response-form > div {
   width: 500px;
   padding-bottom: 10px;
   display: flex;
@@ -382,11 +399,11 @@ input {
   font-size: 1rem;
 }
 
-.footer>a:hover {
+.footer > a:hover {
   cursor: pointer;
 }
 
-.footer>p {
+.footer > p {
   padding-top: 10px;
   color: rgb(37, 37, 37);
 }
@@ -410,7 +427,8 @@ input {
   border-radius: 30px;
 }
 
-#LottiMartin h1, #LottiMartin h2 {
+#LottiMartin h1,
+#LottiMartin h2 {
   text-align: center;
   color: white;
 }

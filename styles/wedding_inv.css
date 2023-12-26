@@ -1,4 +1,4 @@
-body{
+body {
   background-color: rgba(225, 204, 199, 0.1);
 }
 
@@ -27,14 +27,14 @@ a:visited :hover :active {
   max-width: 700px;
 }
 
-.date{
+.date {
   font-family: Rouge Script;
   font-size: 7vmin;
   text-align: center;
   color: rgb(137, 5, 5);
 }
 
-.logo{
+.logo {
   margin-top: 20vmin;
   max-height: 60vmin;
   width: auto;
@@ -47,8 +47,8 @@ a:visited :hover :active {
 }
 
 .anchor-logo:hover {
-  .logo{
-    transform:rotate(360deg);
+  .logo {
+    transform: rotate(360deg);
   }
 }
 
