@@ -27,8 +27,8 @@ function getName() {
       return "Timkó, Robi, Levi és Zsombi!";
     case "KoriEdina":
       return "Edina, Köri, Máté és Bálint!";
-    case "EsztiAndras":
-      return "Eszti és András!";
+    case "Eszti":
+      return "Eszti!";
     case "Adri":
       return "Adri!";
     case "Zsofi":
