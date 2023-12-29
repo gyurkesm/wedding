@@ -1,11 +1,10 @@
 // Set the date we're counting down to
 let weddingDate = new Date("Aug 17, 2024 16:00:00");
-countdown(weddingDate);
 let daysSinceMet = countfrom(new Date("Aug 24, 2019").getTime());
 document.getElementById("days-since-met").innerHTML = daysSinceMet + " napja";
 
-// Update the count down every 1 second
-let x = setInterval(countdown(weddingDate), 1000 * 60);
+countdown(weddingDate);
+const timedcountdown = setInterval(() => countdown(weddingDate), 1000 * 60);
 
 function countdown(in_time) {
   // Get today's date and time
@@ -63,7 +62,7 @@ function countdown(in_time) {
     document.getElementById("timedim2").innerHTML = "Óra";
     document.getElementById("time3").innerHTML = minutes;
     document.getElementById("timedim3").innerHTML = "Perc";
-    document.getElementById("time4").innerHTML = month;
+    document.getElementById("time4").innerHTML = seconds;
     document.getElementById("timedim4").innerHTML = "Másodperc";
   }
 
