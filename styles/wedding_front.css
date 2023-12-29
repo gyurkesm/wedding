@@ -3,7 +3,9 @@
 body {
   background-color: rgba(225, 204, 199, 0.2);
   margin: 0;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
   font-family: "Fredoka", sans-serif;
 }
 

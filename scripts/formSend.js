@@ -1,11 +1,9 @@
 const form = document.querySelector("form");
 
 form.addEventListener("submit", async (e) => {
-  alert("reached");
   e.preventDefault();
   const formData = new FormData(e.target);
   const formDataJSON = JSON.stringify(Object.fromEntries(formData));
-  console.log(formDataJSON);
   const url = "https://lottimartin.cyclic.app/api/guest";
   try {
     const response = await fetch(url, {
